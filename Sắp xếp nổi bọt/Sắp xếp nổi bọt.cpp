@@ -8,20 +8,20 @@ int main()
 
     for (int i = 0; i < 9; i++) {
         cout << "Lan lap " << i + 1 << ": ";
-        bool swap = false;
+        bool c = false;
         for (int j = 0; j < 10-i-1; j++) {  
             if (A[j] > A[j + 1]) {  
                 int temp = A[j];
                 A[j] = A[j + 1];
                 A[j + 1] = temp;  
-                swap = true;
+                c = true;
             }
         }       
         for (int k = 0; k < 10; k++) {
             cout << A[k] << " ";
         }
         cout << endl;    
-        if (!swap) break;
+        if (!c) break;
     }
     return 0;
    

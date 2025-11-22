@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\CTDL\u0026GT\\BT-CTDL\u0026GT\\BT_7_11\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5C2D14E2-8A3F-4F6E-A38D-AEC242E92A65}|BT_7_11.vcxproj|D:\\CTDL\u0026GT\\BT-CTDL\u0026GT\\BT_7_11\\BT_7_11.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5C2D14E2-8A3F-4F6E-A38D-AEC242E92A65}|BT_7_11.vcxproj|solutionrelative:BT_7_11.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BT_7_11.cpp",
+              "DocumentMoniker": "D:\\CTDL\u0026GT\\BT-CTDL\u0026GT\\BT_7_11\\BT_7_11.cpp",
+              "RelativeDocumentMoniker": "BT_7_11.cpp",
+              "ToolTip": "D:\\CTDL\u0026GT\\BT-CTDL\u0026GT\\BT_7_11\\BT_7_11.cpp",
+              "RelativeToolTip": "BT_7_11.cpp",
+              "ViewState": "AgIAADYAAAAAAAAAAAAjwEoAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-07T08:23:25.794Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
