@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\CTDL\u0026GT\\BT-CTDL\u0026GT\\BTVN tu\u1EA7n 15\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8A6F3699-7FC2-43FE-A952-CE8455B2698B}|BTVN tu\u1EA7n 15.vcxproj|D:\\CTDL\u0026GT\\BT-CTDL\u0026GT\\BTVN tu\u1EA7n 15\\BTVN tu\u1EA7n 15.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8A6F3699-7FC2-43FE-A952-CE8455B2698B}|BTVN tu\u1EA7n 15.vcxproj|solutionrelative:BTVN tu\u1EA7n 15.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BTVN tu\u1EA7n 15.cpp",
+              "DocumentMoniker": "D:\\CTDL\u0026GT\\BT-CTDL\u0026GT\\BTVN tu\u1EA7n 15\\BTVN tu\u1EA7n 15.cpp",
+              "RelativeDocumentMoniker": "BTVN tu\u1EA7n 15.cpp",
+              "ToolTip": "D:\\CTDL\u0026GT\\BT-CTDL\u0026GT\\BTVN tu\u1EA7n 15\\BTVN tu\u1EA7n 15.cpp",
+              "RelativeToolTip": "BTVN tu\u1EA7n 15.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-12-30T03:19:46.905Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

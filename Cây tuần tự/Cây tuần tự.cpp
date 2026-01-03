@@ -1,5 +1,4 @@
 ﻿#include <iostream>
-#include <vector>
 #include <cmath>
 
 using namespace std;
@@ -77,48 +76,77 @@ public:
             cout << tree[idx] << " ";    
         }
     }
+    void Heapify(int i) {
+        int largest = i;
+        int left = 2 * i + 1;
+        int right = 2 * i + 2;
+
+        if (left < capacity && tree[left] != -1 && tree[left] > tree[largest])
+            largest = left;
+
+        if (right < capacity && tree[right] != -1 && tree[right] > tree[largest])
+            largest = right;
+
+        if (largest != i) {
+            swap(tree[i], tree[largest]);
+            Heapify(largest);
+        }
+    }
+    void Vundong() {
+        for (int i = count / 2 - 1; i >= 0; i--) {
+            Heapify(i);
+        }
+    }
 };
+
+
 
 int main() {
   
     Caytuantu Tree(30);
 
     // Xây dựng cây: 
-    //                                 10
-    //                               /   \
-    //                              /     \
-    //                             /       \
-    //                            1         7
-    //                           / \      /  \
-    //                          3   5    12   101
-    //                                  /  \    \
-    //                                 14   13   31
-    //                                /    / \
-    //                               15   9   1 
-    Tree.Nutgoc(10);
+    //                                4
+    //                              /   \
+    //                             /     \
+    //                            /       \
+    //                           1         3
+    //                          /  \      /  \
+    //                         2    6    9    10
+    //                        / \   /
+    //                       14  8 7
+    
+    Tree.Nutgoc(4);
 
     Tree.Themtrai(0, 1);    
-    Tree.Themphai(0, 7); 
+    Tree.Themphai(0, 3); 
 
-    Tree.Themtrai(1, 3);
-    Tree.Themphai(1, 5);
+    Tree.Themtrai(1, 2);
+    Tree.Themphai(1, 6);
 
-    Tree.Themtrai(2, 12);
-    Tree.Themphai(2, 101);
+    Tree.Themtrai(2, 9);
+    Tree.Themphai(2, 10);
 
-    Tree.Themtrai(5, 14);
-    Tree.Themphai(5, 13);
+    Tree.Themtrai(3, 14);
+    Tree.Themphai(3, 8);
 
-    Tree.Themphai(6, 31);
+    Tree.Themtrai(4, 7);
 
-    Tree.Themtrai(11, 15);
-
-    Tree.Themtrai(12, 9);
-    Tree.Themphai(12, 1);
-
+  
     cout << "Duyet truoc  : "; Tree.Duyettruoc(); cout << endl;
     cout << "Duyet giua   : "; Tree.Duyetgiua(); cout << endl;
     cout << "Duyet sau    : "; Tree.Duyetsau(); cout << endl;
+    cout << endl; 
+
+    cout << "Cay truoc khi vun dong: ";
+    Tree.Duyettruoc();
+    cout << endl;
+
+    Tree.Vundong();
+
+    cout << "Cay sau khi vun dong: ";
+    Tree.Duyettruoc();
+    cout << endl;
 
     return 0;
 }
