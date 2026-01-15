@@ -1,72 +1,123 @@
-﻿#include <iostream>
-#include <vector>
+﻿
+
+
+#include<stdio.h>
+#include<stdlib.h>
 using namespace std;
 
+
+#define N 11 
+
 /*
-#define V 11
-int A[V + 1][V + 1] = { 0 };
+int Matrix[N + 1][N + 1];
 
-void Themcanh(int u, int t) {
-    A[u][t] = 1;
-    A[t][u] = 1;  
-}
-
-int main() {
-    Themcanh(1, 2);
-    Themcanh(2, 11);
-    Themcanh(10, 11);
-    Themcanh(1, 10);
-    Themcanh(1, 9);
-    Themcanh(1, 8);
-    Themcanh(1, 7);
-    Themcanh(1, 6);
-    Themcanh(6, 5);
-    Themcanh(5, 4);
-    Themcanh(6, 4);
-    Themcanh(4, 3);
-    Themcanh(2, 3);
-
-    cout << "Ma tran ke: \n";
-    for (int i = 1; i <= V; i++) {
-        for (int j = 1; j <= V; j++)
-            cout << A[i][j] << " ";
-        cout << endl;
+void TaoMaTran() {
+    for (int i = 1; i <= N; i++) {
+        for (int j = 1; j <= N; i++) {
+            Matrix[i][j] = 0;
+        }
     }
+}
+void Themcanh(int i, int j) {
+    Matrix[i][j] = 1;
+    Matrix[j][i] = 1;
+}
+void HienThi() {
+    printf("Ma tran:\n");
+    for (int i = 1; i <= N; i++) {
+        for (int j = 1; j <= N; j++) {
+            printf("%d ", Matrix[i][j]);
+        }
+        printf("\n");
+    }
+}
+int main() {
+    TaoMaTran;
+    Themcanh(1, 2);
+    Themcanh(1, 6);
+    Themcanh(1, 7);
+    Themcanh(1, 8);
+    Themcanh(1, 9);
+    Themcanh(1, 10);
+    Themcanh(2, 3);
+    Themcanh(2, 11);
+    Themcanh(3, 4);
+    Themcanh(4, 5);
+    Themcanh(4, 6);
+    Themcanh(5, 6);
+    Themcanh(10, 11);
+
+    HienThi();
     return 0;
 }
-*/
+*/  
+
+
 
 /*
-#define V 11
-vector<int> adj[V + 1];
 
-void Themcanh(int u, int t) {
-    adj[u].push_back(t);
-    adj[t].push_back(u);
+
+typedef struct Node {
+    int v;
+    struct Node* next;
+} Node;
+
+Node* List[N + 1];
+
+
+Node* TaoNode(int x) {
+    Node* p = (Node*)malloc(sizeof(Node));
+    p->v = x;
+    p->next = NULL;
+    return p;
+}
+
+void Taodsach() {
+    for (int i = 1; i <= N; i++) {
+        List[i] = NULL;
+    }
+}
+
+void Themcanh(int i, int j) {
+    Node* p = TaoNode(j);
+    p->next = List[i];
+    List[i] = p;
+
+    p = TaoNode(i);
+    p->next = List[j];
+    List[j] = p;
+}
+
+void HienThi() {
+    printf("Danh sach: \n");
+    for (int i = 1; i <= N; i++) {
+        printf("%d: ", i);
+        Node* p = List[i];
+        while (p != NULL) {
+            printf("%d -> ", p->v);
+            p = p->next;
+        }
+        printf("NULL\n");
+    }
 }
 
 int main() {
+    Taodsach;
     Themcanh(1, 2);
-    Themcanh(2, 11);
-    Themcanh(10, 11);
-    Themcanh(1, 10);
-    Themcanh(1, 9);
-    Themcanh(1, 8);
-    Themcanh(1, 7);
     Themcanh(1, 6);
-    Themcanh(6, 5);
-    Themcanh(5, 4);
-    Themcanh(6, 4);
-    Themcanh(4, 3);
+    Themcanh(1, 7);
+    Themcanh(1, 8);
+    Themcanh(1, 9);
+    Themcanh(1, 10);
     Themcanh(2, 3);
+    Themcanh(2, 11);
+    Themcanh(3, 4);
+    Themcanh(4, 5);
+    Themcanh(4, 6);
+    Themcanh(5, 6);
+    Themcanh(10, 11);
 
-    cout << "Danh sach ke: \n";
-    for (int i = 1; i <= V; i++) {
-        cout << "Dinh " << i << ": ";
-        for (int t : adj[i])
-            cout << t << " ";
-        cout << endl;
-    }
+    HienThi();
     return 0;
 }
 */
