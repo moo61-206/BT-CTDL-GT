@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Admin\\OneDrive - Hanoi University of Science and Technology\\M\u00E1y t\u00EDnh\\C\u002B\u002B\\M\u00E3 h\u00F3a Huffman\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{54E2D3C5-76FF-47C4-9501-739069A885DF}|M\u00E3 h\u00F3a Huffman.vcxproj|C:\\Users\\Admin\\OneDrive - Hanoi University of Science and Technology\\M\u00E1y t\u00EDnh\\C\u002B\u002B\\M\u00E3 h\u00F3a Huffman\\M\u00E3 h\u00F3a Huffman.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{54E2D3C5-76FF-47C4-9501-739069A885DF}|M\u00E3 h\u00F3a Huffman.vcxproj|solutionrelative:M\u00E3 h\u00F3a Huffman.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "M\u00E3 h\u00F3a Huffman.cpp",
+              "DocumentMoniker": "C:\\Users\\Admin\\OneDrive - Hanoi University of Science and Technology\\M\u00E1y t\u00EDnh\\C\u002B\u002B\\M\u00E3 h\u00F3a Huffman\\M\u00E3 h\u00F3a Huffman.cpp",
+              "RelativeDocumentMoniker": "M\u00E3 h\u00F3a Huffman.cpp",
+              "ToolTip": "C:\\Users\\Admin\\OneDrive - Hanoi University of Science and Technology\\M\u00E1y t\u00EDnh\\C\u002B\u002B\\M\u00E3 h\u00F3a Huffman\\M\u00E3 h\u00F3a Huffman.cpp",
+              "RelativeToolTip": "M\u00E3 h\u00F3a Huffman.cpp",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAEsAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-03-14T15:40:54.605Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
